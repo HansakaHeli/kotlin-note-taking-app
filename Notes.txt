@@ -1,0 +1,27 @@
+build.gradel.kts(Project:Note TakingApp)
+Add dependencies for ROOM db , Coroutines ,Navigation and Life Cycle
+
+Add
+buildFeatures {
+        dataBinding = true
+}
+
+Add
+plugins {
+    id("kotlin-kapt")
+    id("androidx.navigation.safeargs")
+}
+
+---------------------------------------------------------------------------------------------------------------------
+build.gradel.kts(Module:app)
+Add
+
+buildscript {
+    repositories {
+        google()
+    }
+    dependencies {
+        val nav_version = "2.7.6"
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+    }
+}
