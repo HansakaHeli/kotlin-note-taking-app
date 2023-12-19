@@ -1,4 +1,4 @@
-package com.mastercoding.notetakingapp.model
+package com.example.notetakingapp.model
 
 import android.os.Parcel
 import android.os.Parcelable
